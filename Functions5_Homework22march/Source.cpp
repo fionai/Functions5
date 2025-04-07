@@ -1,6 +1,7 @@
 ﻿#include <iostream>
 using namespace std;
 
+void PrintArr(int arr[], const int SIZE);
 int Sum(int arr[], const int SIZE);
 double Avg(int arr[], const int SIZE);
 int MinValueIn(int arr[], const int SIZE);
@@ -24,8 +25,7 @@ void main()
 
 
 	cout << "Массив по порядку:\n";
-	for (int i = 0; i < SIZE; i++)
-		cout << arr[i] << " ";
+	PrintArr(arr, SIZE);
 
 	cout << "\nСумма элементов массива равна " << Sum(arr, SIZE) << endl;
 	cout << "Среднее арифметическое элементов равно " << Avg(arr, SIZE) << endl;
@@ -33,16 +33,14 @@ void main()
 	cout << "Максимальное значение в массиве " << MaxValueIn(arr, SIZE) << endl;
 
 	cout << "\n\nИсходный массив:\n";
-	for (int i = 0; i < SIZE10; i++)
-		cout << brr[i] << " ";
+	PrintArr(brr, SIZE10);
 	cout << endl;
 
 	cout << "Введите количество сдвигов влево: ";
 	cin >> n;
 
 	ShiftLeft(brr, SIZE10, n);
-	for (int i = 0; i < SIZE10; i++)
-		cout << brr[i] << " ";
+	PrintArr(brr, SIZE10);
 	cout << endl;
 
 	for (int i = 0; i < SIZE10; i++)
@@ -51,12 +49,16 @@ void main()
 	cout << "Введите количество сдвигов вправо: ";
 	cin >> n;
 	ShiftRight(brr, SIZE10, n);
-	for (int i = 0; i < SIZE10; i++)
-		cout << brr[i] << " ";
+	PrintArr(brr, SIZE10);
 	cout << endl;
 
 }
 
+void PrintArr(int arr[], const int SIZE)
+{
+	for (int i = 0; i < SIZE; i++)
+		cout << arr[i] << " ";
+}
 
 int Sum(int arr[], const int SIZE)
 {
