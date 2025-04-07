@@ -22,7 +22,7 @@ void main()
 
 	for (int i = 0; i < SIZE; i++)
 		cin >> arr[i];
-м
+
 	cout << "\nСумма элементов массива равна " << Sum(arr, SIZE) << endl;
 	cout << "Среднее арифметическое элементов равно " << Avg(arr, SIZE) << endl;
 	cout << "Минимальное значение в массиве " << MinValueIn(arr, SIZE) << endl;
