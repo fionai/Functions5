@@ -1,4 +1,4 @@
-#include <iostream>
+ï»¿#include <iostream>
 using namespace std;
 
 int Sum(int arr[], const int SIZE);
@@ -16,28 +16,28 @@ void main()
 	int brr[SIZE10] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9 };
 	int n;
 
-	cout << "ÐÀÁÎÒÀ Ñ ÌÀÑÑÈÂÀÌÈ\n";
-	cout << "Ââåäèòå 5 ÷èñåë - ýëåìåíòû ìàññèâà: ";
+	cout << "Ð ÐÐ‘ÐžÐ¢Ð Ð¡ ÐœÐÐ¡Ð¡Ð˜Ð’ÐÐœÐ˜\n";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ 5 Ñ‡Ð¸ÑÐµÐ» - ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¼Ð°ÑÑÐ¸Ð²Ð°: ";
 
 	for (int i = 0; i < SIZE; i++)
 		cin >> arr[i];
 
 
-	cout << "Ìàññèâ ïî ïîðÿäêó:\n";
+	cout << "ÐœÐ°ÑÑÐ¸Ð² Ð¿Ð¾ Ð¿Ð¾Ñ€ÑÐ´ÐºÑƒ:\n";
 	for (int i = 0; i < SIZE; i++)
 		cout << arr[i] << " ";
 
-	cout << "\nÑóììà ýëåìåíòîâ ìàññèâà ðàâíà " << Sum(arr, SIZE) << endl;
-	cout << "Ñðåäíåå àðèôìåòè÷åñêîå ýëåìåíòîâ ðàâíî " << Avg(arr, SIZE) << endl;
-	cout << "Ìèíèìàëüíîå çíà÷åíèå â ìàññèâå " << MinValueIn(arr, SIZE) << endl;
-	cout << "Ìàêñèìàëüíîå çíà÷åíèå â ìàññèâå " << MaxValueIn(arr, SIZE) << endl;
+	cout << "\nÐ¡ÑƒÐ¼Ð¼Ð° ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ð¼Ð°ÑÑÐ¸Ð²Ð° Ñ€Ð°Ð²Ð½Ð° " << Sum(arr, SIZE) << endl;
+	cout << "Ð¡Ñ€ÐµÐ´Ð½ÐµÐµ Ð°Ñ€Ð¸Ñ„Ð¼ÐµÑ‚Ð¸Ñ‡ÐµÑÐºÐ¾Ðµ ÑÐ»ÐµÐ¼ÐµÐ½Ñ‚Ð¾Ð² Ñ€Ð°Ð²Ð½Ð¾ " << Avg(arr, SIZE) << endl;
+	cout << "ÐœÐ¸Ð½Ð¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ " << MinValueIn(arr, SIZE) << endl;
+	cout << "ÐœÐ°ÐºÑÐ¸Ð¼Ð°Ð»ÑŒÐ½Ð¾Ðµ Ð·Ð½Ð°Ñ‡ÐµÐ½Ð¸Ðµ Ð² Ð¼Ð°ÑÑÐ¸Ð²Ðµ " << MaxValueIn(arr, SIZE) << endl;
 
-	cout << "\n\nÈñõîäíûé ìàññèâ:\n";
+	cout << "\n\nÐ˜ÑÑ…Ð¾Ð´Ð½Ñ‹Ð¹ Ð¼Ð°ÑÑÐ¸Ð²:\n";
 	for (int i = 0; i < SIZE10; i++)
 		cout << brr[i] << " ";
 	cout << endl;
 
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ âëåâî: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð² Ð²Ð»ÐµÐ²Ð¾: ";
 	cin >> n;
 
 	ShiftLeft(brr, SIZE10, n);
@@ -48,7 +48,7 @@ void main()
 	for (int i = 0; i < SIZE10; i++)
 		brr[i] = i;
 
-	cout << "Ââåäèòå êîëè÷åñòâî ñäâèãîâ âïðàâî: ";
+	cout << "Ð’Ð²ÐµÐ´Ð¸Ñ‚Ðµ ÐºÐ¾Ð»Ð¸Ñ‡ÐµÑÑ‚Ð²Ð¾ ÑÐ´Ð²Ð¸Ð³Ð¾Ð² Ð²Ð¿Ñ€Ð°Ð²Ð¾: ";
 	cin >> n;
 	ShiftRight(brr, SIZE10, n);
 	for (int i = 0; i < SIZE10; i++)
