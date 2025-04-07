@@ -8,7 +8,7 @@ int MaxValueIn(int arr[], const int SIZE);
 void ShiftLeft(int arr[], const int SIZE, int n);
 void ShiftRight(int arr[], const int SIZE, int n);
 
-void main() 
+void main()
 {
 	setlocale(LC_ALL, "");
 	const int SIZE = 5, SIZE10 = 10;
