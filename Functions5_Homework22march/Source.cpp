@@ -10,7 +10,7 @@ void ShiftLeft(int arr[], const int SIZE, int n);
 void ShiftRight(int arr[], const int SIZE, int n);
 
 void main()
-{
+{ 
 	setlocale(LC_ALL, "");
 	const int SIZE = 5, SIZE10 = 10;
 	int arr[SIZE] = {};
