@@ -1,7 +1,6 @@
-#include <iostream>
-#include <conio.h>
+#include "stdafx.h"
+
 using namespace std;
-#define delimiter "\n------------------------------------\n"
 
 const int ROWS = 10, COLS = 10;
 
