@@ -29,5 +29,26 @@
     <ClInclude Include="Copy.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="PrintArr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="RandArr.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sum.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Avg.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="MinMaxValueIn.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Shifts.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Sort.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

@@ -130,9 +130,16 @@
     <ClCompile Include="Source.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Avg.h" />
     <ClInclude Include="Constants.h" />
     <ClInclude Include="Copy.h" />
+    <ClInclude Include="MinMaxValueIn.h" />
+    <ClInclude Include="PrintArr.h" />
+    <ClInclude Include="RandArr.h" />
+    <ClInclude Include="Shifts.h" />
+    <ClInclude Include="Sort.h" />
     <ClInclude Include="stdafx.h" />
+    <ClInclude Include="Sum.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
