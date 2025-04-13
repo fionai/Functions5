@@ -1,5 +1,6 @@
 #include "stdafx.h"
 #include "constants.h"
+#include "copy.h"
 using namespace std;
 
 
@@ -47,9 +48,6 @@ void Sort(T arr[], const int SIZE);
 template<typename T>
 void Sort(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
-//копирует первый массив во второй
-void CopyArr(int arr[ROWS][COLS], int arr2[ROWS][COLS], const int ROWS, const int COLS);
-void CopyArr(double arr[ROWS][COLS], double arr2[ROWS][COLS], const int ROWS, const int COLS);
 
 void main()
 {
@@ -371,16 +369,3 @@ void Sort(T arr[ROWS][COLS], const int ROWS, const int COLS)
 		}
 }
 
-
-void CopyArr(int arr[ROWS][COLS], int arr2[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-		for (int j = 0; j < COLS; j++)
-			arr2[i][j]  = arr[i][j];
-}
-void CopyArr(double arr[ROWS][COLS], double arr2[ROWS][COLS], const int ROWS, const int COLS)
-{
-	for (int i = 0; i < ROWS; i++)
-		for (int j = 0; j < COLS; j++)
-			arr2[i][j] = arr[i][j];
-}
