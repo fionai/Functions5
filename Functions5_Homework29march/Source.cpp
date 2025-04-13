@@ -1,8 +1,7 @@
 #include "stdafx.h"
-
+#include "constants.h"
 using namespace std;
 
-const int ROWS = 10, COLS = 10;
 
 template<typename T>
 void PrintArr(T arr[], const int SIZE);
