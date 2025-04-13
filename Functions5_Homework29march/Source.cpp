@@ -1,4 +1,4 @@
-#include "stdafx.h"
+п»ї#include "stdafx.h"
 #include "constants.h"
 #include "copy.h"
 using namespace std;
@@ -58,28 +58,28 @@ void main()
 	int n;
 	
 
-	cout << "РАБОТА С МАССИВАМИ" <<  delimiter;
+	cout << "Р РђР‘РћРўРђ РЎ РњРђРЎРЎРР’РђРњР" <<  delimiter;
 
 	RandArr(arr, SIZE);
-	cout << "Исходный массив:\n";
+	cout << "РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ:\n";
 	PrintArr(arr, SIZE);
 
-	cout << "\nСумма элементов массива равна " << Sum(arr, SIZE) << endl;
-	cout << "Среднее арифметическое элементов равно " << Avg(arr, SIZE) << endl;
-	cout << "Минимальное значение в массиве " << MinValueIn(arr, SIZE) << endl;
-	cout << "Максимальное значение в массиве " << MaxValueIn(arr, SIZE) << endl;
-	cout << "Отсортированный массив:\n";
+	cout << "\nРЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅР° " << Sum(arr, SIZE) << endl;
+	cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ СЂР°РІРЅРѕ " << Avg(arr, SIZE) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ " << MinValueIn(arr, SIZE) << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ РІ РјР°СЃСЃРёРІРµ " << MaxValueIn(arr, SIZE) << endl;
+	cout << "РћС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ:\n";
 	Sort(arr, SIZE);
 	PrintArr(arr, SIZE);
 
-	cout << "\n\nИсходный массив:\n";
+	cout << "\n\nРСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ:\n";
 	PrintArr(brr, SIZE10);
 	cout << endl;
 
-	cout << "Введите количество сдвигов: ";
+	cout << "Р’РІРµРґРёС‚Рµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРґРІРёРіРѕРІ: ";
 	cin >> n;
 
-	cout << "\nСдвиг исходного массива на " << n << " позиций влево: \n";
+	cout << "\nРЎРґРІРёРі РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР° РЅР° " << n << " РїРѕР·РёС†РёР№ РІР»РµРІРѕ: \n";
 	ShiftLeft(brr, SIZE10, n);
 	PrintArr(brr, SIZE10);
 	cout << endl;
@@ -87,75 +87,75 @@ void main()
 	for (int i = 0; i < SIZE10; i++)
 		brr[i] = i;
 
-	cout << "\nСдвиг исходного массива на " << n << " позиций влево: \n";
+	cout << "\nРЎРґРІРёРі РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР° РЅР° " << n << " РїРѕР·РёС†РёР№ РІР»РµРІРѕ: \n";
 	ShiftRight(brr, SIZE10, n);
 	PrintArr(brr, SIZE10);
 	cout << endl;
 	_getch();
 	cout << "\033c";
 	//------------------------------------------------------------------
-	cout << "ДВУМЕРНЫЕ МАССИВЫ" << delimiter;
+	cout << "Р”Р’РЈРњР•Р РќР«Р• РњРђРЎРЎРР’Р«" << delimiter;
 
 	//------------------------------------------------------------------
-	cout << "Целочисленные массивы\n\n";
+	cout << "Р¦РµР»РѕС‡РёСЃР»РµРЅРЅС‹Рµ РјР°СЃСЃРёРІС‹\n\n";
 	int arr2[ROWS][COLS] = {}, arr2_buf[ROWS][COLS] = {};
 
 	RandArr(arr2, ROWS, COLS);
-	cout << "Исходный массив:\n";
+	cout << "РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ:\n";
 	PrintArr(arr2, ROWS, COLS);
-	cout << "\nСумма элементов массива равна " << Sum(arr2, ROWS, COLS) << endl;
-	cout << "Среднее арифметическое элементов массива равно " << Avg(arr2, ROWS, COLS) << endl;
-	cout << "Минимальное значение равно " << MinValueIn(arr2, ROWS, COLS) << endl;
-	cout << "Максимальное значение равно " << MaxValueIn(arr2, ROWS, COLS) << endl;
+	cout << "\nРЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅР° " << Sum(arr2, ROWS, COLS) << endl;
+	cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅРѕ " << Avg(arr2, ROWS, COLS) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЂР°РІРЅРѕ " << MinValueIn(arr2, ROWS, COLS) << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЂР°РІРЅРѕ " << MaxValueIn(arr2, ROWS, COLS) << endl;
 
-	CopyArr(arr2, arr2_buf, ROWS, COLS); //сохраняем исходный массив
+	CopyArr(arr2, arr2_buf, ROWS, COLS); //СЃРѕС…СЂР°РЅСЏРµРј РёСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ
 
-	cout << "\nВведите величину сдвига: ";
+	cout << "\nР’РІРµРґРёС‚Рµ РІРµР»РёС‡РёРЅСѓ СЃРґРІРёРіР°: ";
 	cin >> n;
-	cout << "\nСдвиг исходного массива на " << n << " позиций влево: \n";
+	cout << "\nРЎРґРІРёРі РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР° РЅР° " << n << " РїРѕР·РёС†РёР№ РІР»РµРІРѕ: \n";
 	ShiftLeft(arr2, ROWS, COLS, n);
 	PrintArr(arr2, ROWS, COLS);
 
-	cout << "\nСдвиг исходного массива на " << n << " позиций вправо: \n";
+	cout << "\nРЎРґРІРёРі РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР° РЅР° " << n << " РїРѕР·РёС†РёР№ РІРїСЂР°РІРѕ: \n";
 	CopyArr(arr2_buf, arr2, ROWS, COLS);
 	ShiftRight(arr2, ROWS, COLS, n);
 	PrintArr(arr2, ROWS, COLS);
 
 	CopyArr(arr2_buf, arr2, ROWS, COLS);
 	Sort(arr2, ROWS, COLS);
-	cout << "\nОтсортированный массив:\n";
+	cout << "\nРћС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ:\n";
 	PrintArr(arr2, ROWS, COLS);
 
 	_getch();
 	cout << "\033c";
 	//------------------------------------------------------------------
-	cout << "Массивы с дробными числами\n\n" ;
+	cout << "РњР°СЃСЃРёРІС‹ СЃ РґСЂРѕР±РЅС‹РјРё С‡РёСЃР»Р°РјРё\n\n" ;
 	double arr2d[ROWS][COLS] = {}, arr2d_buf[ROWS][COLS] = {};
 
 	RandArr(arr2d, ROWS, COLS);
-	cout << "Исходный массив:\n";
+	cout << "РСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ:\n";
 	PrintArr(arr2d, ROWS, COLS);
-	cout << "\nСумма элементов массива равна " << Sum(arr2d, ROWS, COLS) << endl;
-	cout << "Среднее арифметическое элементов массива равно " << Avg(arr2d, ROWS, COLS) << endl;
-	cout << "Минимальное значение равно " << MinValueIn(arr2d, ROWS, COLS) << endl;
-	cout << "Максимальное значение равно " << MaxValueIn(arr2d, ROWS, COLS) << endl;
+	cout << "\nРЎСѓРјРјР° СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅР° " << Sum(arr2d, ROWS, COLS) << endl;
+	cout << "РЎСЂРµРґРЅРµРµ Р°СЂРёС„РјРµС‚РёС‡РµСЃРєРѕРµ СЌР»РµРјРµРЅС‚РѕРІ РјР°СЃСЃРёРІР° СЂР°РІРЅРѕ " << Avg(arr2d, ROWS, COLS) << endl;
+	cout << "РњРёРЅРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЂР°РІРЅРѕ " << MinValueIn(arr2d, ROWS, COLS) << endl;
+	cout << "РњР°РєСЃРёРјР°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЂР°РІРЅРѕ " << MaxValueIn(arr2d, ROWS, COLS) << endl;
 
-	CopyArr(arr2d, arr2d_buf, ROWS, COLS); //Сохраняем исходный массив
+	CopyArr(arr2d, arr2d_buf, ROWS, COLS); //РЎРѕС…СЂР°РЅСЏРµРј РёСЃС…РѕРґРЅС‹Р№ РјР°СЃСЃРёРІ
 
-	cout << "\nВведите величину сдвига: ";
+	cout << "\nР’РІРµРґРёС‚Рµ РІРµР»РёС‡РёРЅСѓ СЃРґРІРёРіР°: ";
 	cin >> n;
-	cout << "\nСдвиг исходного массива на " << n << " позиций влево: \n";
+	cout << "\nРЎРґРІРёРі РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР° РЅР° " << n << " РїРѕР·РёС†РёР№ РІР»РµРІРѕ: \n";
 	ShiftLeft(arr2d, ROWS, COLS, n);
 	PrintArr(arr2d, ROWS, COLS);
 
-	cout << "\nСдвиг исходного массива на " << n << " позиций вправо: \n";
+	cout << "\nРЎРґРІРёРі РёСЃС…РѕРґРЅРѕРіРѕ РјР°СЃСЃРёРІР° РЅР° " << n << " РїРѕР·РёС†РёР№ РІРїСЂР°РІРѕ: \n";
 	CopyArr(arr2d_buf, arr2d, ROWS, COLS);
 	ShiftRight(arr2d, ROWS, COLS, n);
 	PrintArr(arr2d, ROWS, COLS);
 
 	CopyArr(arr2d_buf, arr2d, ROWS, COLS);
 	Sort(arr2d, ROWS, COLS);
-	cout << "\nОтсортированный массив:\n";
+	cout << "\nРћС‚СЃРѕСЂС‚РёСЂРѕРІР°РЅРЅС‹Р№ РјР°СЃСЃРёРІ:\n";
 	PrintArr(arr2d, ROWS, COLS);
 
 }
@@ -283,9 +283,9 @@ void ShiftLeft(T arr[ROWS][COLS], const int ROWS, const int COLS, int n)
 		T first = arr[0][0];
 		for (int i = 0; i < ROWS; i++)
 			for (int j = 0; j < COLS; j++)
-				if (j < COLS - 1) //простой сдвиг внутри строки
+				if (j < COLS - 1) //РїСЂРѕСЃС‚РѕР№ СЃРґРІРёРі РІРЅСѓС‚СЂРё СЃС‚СЂРѕРєРё
 					arr[i][j] = arr[i][j + 1];
-				else if (i < ROWS - 1) // сдвиг между строк
+				else if (i < ROWS - 1) // СЃРґРІРёРі РјРµР¶РґСѓ СЃС‚СЂРѕРє
 					arr[i][j] = arr[i + 1][0];
 				else
 					arr[i][j] = first;
@@ -311,9 +311,9 @@ void ShiftRight(T arr[ROWS][COLS], const int ROWS, const int COLS, int n)
 		T last = arr[ROWS - 1][COLS - 1];
 		for (int i = 0; i < ROWS; i++)
 			for (int j = 0; j < COLS; j++)
-				if (j < COLS - 1) //простой сдвиг внутри строки
+				if (j < COLS - 1) //РїСЂРѕСЃС‚РѕР№ СЃРґРІРёРі РІРЅСѓС‚СЂРё СЃС‚СЂРѕРєРё
 					arr[ROWS - 1 - i][COLS - 1 - j] = arr[ROWS - 1 - i][COLS - 2 - j];
-				else if (i < ROWS - 1) // сдвиг между строк
+				else if (i < ROWS - 1) // СЃРґРІРёРі РјРµР¶РґСѓ СЃС‚СЂРѕРє
 					arr[ROWS - 1 - i][COLS - 1 - j] = arr[ROWS - 2 - i][COLS - 1];
 				else
 					arr[ROWS - 1 - i][COLS - 1 - j] = last;
@@ -336,31 +336,31 @@ template<typename T>
 void Sort(T arr[ROWS][COLS], const int ROWS, const int COLS)
 {
 	
-	//сортировка перемещением минимального элемента в начало массива
+	//СЃРѕСЂС‚РёСЂРѕРІРєР° РїРµСЂРµРјРµС‰РµРЅРёРµРј РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р° РІ РЅР°С‡Р°Р»Рѕ РјР°СЃСЃРёРІР°
 	for (int i = 0; i < ROWS; i++)
 		for (int j = 0; j < COLS; j++)
 		{
-			//arr[pos_i][pos_j] будет содержать минимальный элемент
+			//arr[pos_i][pos_j] Р±СѓРґРµС‚ СЃРѕРґРµСЂР¶Р°С‚СЊ РјРёРЅРёРјР°Р»СЊРЅС‹Р№ СЌР»РµРјРµРЅС‚
 			int pos_i = i;
 			int pos_j = j;
-			//переберем сначала остаток текущей строки
+			//РїРµСЂРµР±РµСЂРµРј СЃРЅР°С‡Р°Р»Р° РѕСЃС‚Р°С‚РѕРє С‚РµРєСѓС‰РµР№ СЃС‚СЂРѕРєРё
 			for (int l = j + 1; l < COLS; l++)
 				if (arr[pos_i][pos_j] > arr[i][l])
 				{
-					//запоминаем позицию минимального элемента
+					//Р·Р°РїРѕРјРёРЅР°РµРј РїРѕР·РёС†РёСЋ РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р°
 					pos_i = i;
 					pos_j = l;
 				}
-			//затем переберем полностью все строки ниже текущей
+			//Р·Р°С‚РµРј РїРµСЂРµР±РµСЂРµРј РїРѕР»РЅРѕСЃС‚СЊСЋ РІСЃРµ СЃС‚СЂРѕРєРё РЅРёР¶Рµ С‚РµРєСѓС‰РµР№
 			for (int k = i+1; k < ROWS; k++)
 				for (int l = 0; l < COLS; l++)
 					if (arr[pos_i][pos_j] > arr[k][l])
 					{
-						//запоминаем позицию минимального элемента
+						//Р·Р°РїРѕРјРёРЅР°РµРј РїРѕР·РёС†РёСЋ РјРёРЅРёРјР°Р»СЊРЅРѕРіРѕ СЌР»РµРјРµРЅС‚Р°
 						pos_i = k;
 						pos_j = l;
 					}
-			if (arr[pos_i][pos_j] < arr[i][j]) //если найденный минимальный меньше текущего, меняем их местами
+			if (arr[pos_i][pos_j] < arr[i][j]) //РµСЃР»Рё РЅР°Р№РґРµРЅРЅС‹Р№ РјРёРЅРёРјР°Р»СЊРЅС‹Р№ РјРµРЅСЊС€Рµ С‚РµРєСѓС‰РµРіРѕ, РјРµРЅСЏРµРј РёС… РјРµСЃС‚Р°РјРё
 			{
 				T buf = arr[pos_i][pos_j];
 				arr[pos_i][pos_j] = arr[i][j];
