@@ -4,6 +4,7 @@
 #include "PrintArr.h"
 #include "RandArr.h"
 #include "Sum.h"
+#include "Sum.cpp"
 #include "Avg.h"
 #include "MinMaxValueIn.h"
 #include "Shifts.h"
