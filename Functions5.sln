@@ -9,8 +9,6 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Functions5_Homework22march"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Functions5_Homework29march", "Functions5_Homework29march\Functions5_Homework29march.vcxproj", "{732F98A7-AB7B-4E09-8207-E6AC99434A3C}"
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "LIBcheck", "LIBcheck\LIBcheck.vcxproj", "{206D6682-EC42-45B8-85C2-0AE5013D56BC}"
-EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|x64 = Debug|x64
@@ -43,14 +41,6 @@ Global
 		{732F98A7-AB7B-4E09-8207-E6AC99434A3C}.Release|x64.Build.0 = Release|x64
 		{732F98A7-AB7B-4E09-8207-E6AC99434A3C}.Release|x86.ActiveCfg = Release|Win32
 		{732F98A7-AB7B-4E09-8207-E6AC99434A3C}.Release|x86.Build.0 = Release|Win32
-		{206D6682-EC42-45B8-85C2-0AE5013D56BC}.Debug|x64.ActiveCfg = Debug|x64
-		{206D6682-EC42-45B8-85C2-0AE5013D56BC}.Debug|x64.Build.0 = Debug|x64
-		{206D6682-EC42-45B8-85C2-0AE5013D56BC}.Debug|x86.ActiveCfg = Debug|Win32
-		{206D6682-EC42-45B8-85C2-0AE5013D56BC}.Debug|x86.Build.0 = Debug|Win32
-		{206D6682-EC42-45B8-85C2-0AE5013D56BC}.Release|x64.ActiveCfg = Release|x64
-		{206D6682-EC42-45B8-85C2-0AE5013D56BC}.Release|x64.Build.0 = Release|x64
-		{206D6682-EC42-45B8-85C2-0AE5013D56BC}.Release|x86.ActiveCfg = Release|Win32
-		{206D6682-EC42-45B8-85C2-0AE5013D56BC}.Release|x86.Build.0 = Release|Win32
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
