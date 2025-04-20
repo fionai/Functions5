@@ -13,7 +13,7 @@ void main()
 
     const int SIZE = 5;
     int arr[SIZE] = {0, 1, 2, 3, 4};
-    int sum = NewSum(arr, SIZE);
+    int sum = StaticLib::StaticClass::NewSum(arr, SIZE);
 
 }
 
