@@ -5,10 +5,10 @@ using namespace std;
 
 const int ROWS = 10, COLS = 10;
 
-template<typename T>
-void PrintArr(T arr[], const int SIZE);
-template<typename T>
-void PrintArr(T arr[ROWS][COLS], const int ROWS, const int COLS);
+template
+<typename T>void PrintArr(T arr[], const int SIZE);
+template
+<typename T>void PrintArr(T arr[ROWS][COLS], const int ROWS, const int COLS);
 
 void RandArr(int arr[], const int SIZE);
 void RandArr(int arr[ROWS][COLS], const int ROWS, const int COLS);
