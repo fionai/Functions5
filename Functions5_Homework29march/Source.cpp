@@ -1,14 +1,28 @@
 ﻿#include "stdafx.h"
 #include "constants.h"
+
 #include "copy.h"
+#include "copy.cpp"
+
 #include "PrintArr.h"
+#include "PrintArr.cpp"
+
 #include "RandArr.h"
+
 #include "Sum.h"
 #include "Sum.cpp"
+
 #include "Avg.h"
+#include "Avg.cpp"
+
 #include "MinMaxValueIn.h"
+#include "MinMaxValueIn.cpp"
+
 #include "Shifts.h"
+#include "Shifts.cpp"
+
 #include "Sort.h"
+#include "Sort.cpp"
 
 void main()
 {

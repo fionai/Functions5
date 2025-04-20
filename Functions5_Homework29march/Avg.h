@@ -4,12 +4,6 @@
 #include "Constants.h"
 
 template<typename T>
-double Avg(T arr[], const int SIZE)
-{
-	return (double)Sum(arr, SIZE) / SIZE;
-}
+double Avg(T arr[], const int SIZE);
 template<typename T>
-double Avg(T arr[ROWS][COLS], const int ROWS, const int COLS)
-{
-	return (double)Sum(arr, ROWS, COLS) / ROWS / COLS;
-}
+double Avg(T arr[ROWS][COLS], const int ROWS, const int COLS);
